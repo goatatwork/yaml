@@ -6,5 +6,5 @@ services:
     ports:
       - "8888:8080"
     environment:
-      NGINX_HOST=lmfaasaas.com
-      NGINX_PORT=8080
+      NGINX_HOST: "lmfaasaas.com"
+      NGINX_PORT: "8080"
