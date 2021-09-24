@@ -1,8 +1,8 @@
 version: "3"
 
 volumes:
-  PiholeEtcPihole:
-  PiholeEtcDnsmasq:
+  etc_pihole:
+  etc_dnsmasq:
 
 services:
   pihole:
@@ -19,8 +19,8 @@ services:
       PIHOLE_DNS_: '127.0.0.1#5053;8.8.8.8;8.8.4.4'
       # WEBPASSWORD: 'set a secure password here or it will be random'
     volumes:
-       - 'PiholeEtcPihole:/etc/pihole/'
-       - 'PiholeEtcDnsmasq:/etc/dnsmasq.d/'
+       - 'etc_pihole:/etc/pihole/'
+       - 'etc_dnsmasq:/etc/dnsmasq.d/'
     cap_add:
       - NET_ADMIN
     restart: unless-stopped
