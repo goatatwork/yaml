@@ -3,6 +3,10 @@ version: "3"
 services:
   nginx:
     image: nginxinc/nginx-unprivileged:1.21
+    deploy:
+      placement:
+        constraints:
+          - "org.sniper.node.architecture==linux x86_64"
     ports:
       - "8888:8080"
     environment:
