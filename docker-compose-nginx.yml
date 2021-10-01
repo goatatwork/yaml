@@ -6,7 +6,7 @@ services:
     deploy:
       placement:
         constraints:
-          - "engine.labels.operatingsystem==linux x86_64"
+          - "OS==linux x86_64"
     ports:
       - "8888:8080"
     environment:
