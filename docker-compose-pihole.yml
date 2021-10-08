@@ -16,7 +16,7 @@ services:
       - "4430:443/tcp"
     environment:
       TZ: 'America/Chicago'
-      PIHOLE_DNS_: '127.0.0.1#5053;8.8.8.8;8.8.4.4'
+      PIHOLE_DNS_: '1.1.1.1;1.0.0.1'
       # WEBPASSWORD: 'set a secure password here or it will be random'
     volumes:
        - 'etc_pihole:/etc/pihole/'
