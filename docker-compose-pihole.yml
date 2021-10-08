@@ -12,7 +12,7 @@ services:
       - "53:53/tcp"
       - "53:53/udp"
       - "67:67/udp"
-      - "8081:80/tcp"
+      - "8080:80/tcp"
       - "4430:443/tcp"
     environment:
       TZ: 'America/Chicago'
