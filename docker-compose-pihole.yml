@@ -24,3 +24,7 @@ services:
     cap_add:
       - NET_ADMIN
     restart: unless-stopped
+    deploy:
+      placement:
+        constraints:
+          - node.labels.architecture == armv7l
