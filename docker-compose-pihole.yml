@@ -27,4 +27,4 @@ services:
     deploy:
       placement:
         constraints:
-          - node.labels.architecture == armv7l
+          - node.platform.arch == armv7l
