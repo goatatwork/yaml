@@ -27,6 +27,13 @@ spec:
       containers:
       - image: ubuntu/mysql
         name: mysql
+        resources:
+          limits:
+            cpu: "1"
+            memory: 1024M
+          requests:
+            cpu: "1"
+            memory: 1024M        
         env:
           # Use secret in real usage
         - name: MYSQL_ROOT_PASSWORD
