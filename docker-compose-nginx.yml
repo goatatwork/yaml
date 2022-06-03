@@ -13,7 +13,7 @@ services:
       - "8889:8080"
     environment:
       NGINX_HOST: "lmfaasaas.com"
-      NGINX_PORT: "8080"
+      NGINX_PORT: $NGINX_PORT
     labels:
       kompose.service.type: LoadBalancer
       # kompose.service.type: NodePort
